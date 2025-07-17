@@ -1,6 +1,22 @@
 /* General Page Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.home-title {
+    font-family: 'Merriweather', 'Source Sans 3', sans-serif;
+    font-size: 2em;
+}
+
 body {
     background-color: #fcfbfb; 
+    font-family: 'Merriweather', 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 #content {
@@ -19,6 +35,7 @@ nav a {
     text-align: center;
     color: antiquewhite;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -34,11 +51,20 @@ nav a:hover {
 /* Button Box */
 .button-box {
     text-align: center;
+    padding: 20px;
 }
 
 /* Main Section */
 main section {
     text-align: center;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 /* Background */
@@ -50,11 +76,14 @@ main section {
 /* Logo */
 .logo {
     width: 80px;
+    padding-top: 35px;
 }
 
 /* Title and Text Styling */
 .home-title, h4 {
     color: black;
+    line-height: 1.5em;
+    margin-top: 10px;
 }
 
 /* Button Styles */
@@ -62,6 +91,9 @@ main section {
     background-color: #596054;
     color: antiquewhite;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -72,16 +104,20 @@ main section {
 /* Message Box */
 .msg {
     background-color: #141e0db3;
+    padding: 35px;
 }
 
 .msg h2, .msg p {
     color: antiquewhite;
+    padding-bottom: 15px;
 }
 
 /* Footer */
 footer {
     background-color: #141e0db3;
     color: antiquewhite;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
