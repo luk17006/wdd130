@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitization Process</title>
+    <title>Digitization Process for Windows</title>
 </head>
 <body>
     
     <header>
         <a href="index.html" id="logo_link">
                 <img class="logo" src="styles/images/logo.png" alt="Digital Memory Works Logo">
-            </a>
+        </a>
+        <h1>Preserving Media That Matters</h1>
             <nav>
                 <a href="index.html">Addressing the Issue</a>
                 <a href="process.html">The Digitization Process</a>
@@ -20,7 +21,7 @@
 
     <section>
         <h1>How to preserve Your Media</h1>
-        <p>This page will cover how to preserve your many tapes and discs. Read through it carefully before attempting anything on your own. If you find that you are struggling to source the right equipment or find that this process is a bit beyond you, feel free to reach out to me for a consult on a digitization service. You can email me <a href="mailto:luk17006@byui.edu?subject=Digitization Inquiry">here</a>.</p>
+        <p>This page will cover how to preserve your many tapes and discs with a Windows computer. Read through it carefully before attempting anything on your own. If you find that you are struggling to source the right equipment or find that this process is a bit beyond you, feel free to reach out to me for a consult on a digitization service. You can email me <a href="mailto:luk17006@byui.edu?subject=Digitization Inquiry">here</a>.</p>
     </section>
 
     <main>
@@ -49,13 +50,28 @@
         </section>
 
         <section>
-            <h4>What you need for preserving tapes</h4>
+            <h4>What you need for preserving audiotapes</h4>
+
+            <p>In addition to your computer and storage solutions, to digitize audiotapes you will need:</p>
+
+            <ul>
+                <li>a device to play them</li>
+                <li>an aux cable</li>
+                <li>an audio capture device (Many computers have one built in via a microphone jack)</li>
+                <li>and the Audacity software which can be downloaded <a href="https://www.audacityteam.org/download/windows/" target="_blank" rel="noopener noreferrer">here</a></li>
+            </ul>
+
+            <p>Your tape player will hook directly into your computer via the blue microphone jack. If your computer has a pink jack, don't use it as it will add noise to your recordings.</p>
+        </section>
+
+        <section>
+            <h4>What you need for preserving videotapes</h4>
             <figure>
                 <img src="styles/images/hi8small.jpg" alt="hi8">
                 <figcaption>8mm "Hi8" videotape. Equipment that can play these back are becoming scarce.</figcaption>
             </figure>
 
-            <p>In addition to your computer and storage solutions, to digitize tapes you will need:</p>
+            <p>In addition to your computer and storage solutions, to digitize videotapes you will need:</p>
 
             <ul>
                 <li>a device to play them (either a VCR or camcorder)</li>
@@ -96,7 +112,7 @@
                 <li>Rinse and repeat! See, I told you it was easy!</li>
             </ol>
 
-            <p>Don't forget to make a copy of your preserved files to another storage device for redundancy</p>
+            <p>Don't forget to make a copy of your preserved files to another storage device for redundancy.</p>
         </section>
 
         <section>
@@ -117,17 +133,65 @@
 
             <p>NOTE: The .mkv files that are created from your discs don't often play on computers on their own. If this is the case for you, the VLC media player is an excellent program that plays .mkv files. That software can be downloaded <a href="https://www.videolan.org/vlc/" target="_blank" rel="noopener noreferrer">here</a>. If you would rather have your videos put into .mp4 format, you will need to convert them later.</p>
 
-            <p>Don't forget to make a copy of your preserved files to another storage device for redundancy</p>
+            <p>Don't forget to make a copy of your preserved files to another storage device for redundancy.</p>
         </section>
-        
+
+        <section>
+            <h4>Process to preserve audiotapes</h4>
+            <p>Unlike discs, tapes actually need to be converted from an analog signal to a digital file. This is why we call it digitization. This process is not as quick as simply archiving CDs or DVDs, though, because in order to preserve a tape, you have to let it playback from start to finish. Here is how that process is done for audiotapes:</p>
+
+            <ol>
+                <li>Make sure your tape player is turned on and hooked into your computer as described above.</li>
+                <li>On your computer, open Audacity. At the top of the window click the button that says "Audio Setup".</li>
+                <li>From this drop down list set the host to MME.</li>
+                <li>Set the playback device to your speakers or headphones.</li>
+                <li>Set the recording device to Line In or your chosen audio capture device.</li>
+                <li>Set the recording channels to stereo.</li>
+                <li>Insert your tape and let it play. You should see the level meters next to the microphone at the top right of the window start to respond to your tape.</li>
+                <li>You want these levels to be around -6 dB to -3 dB. This should put your meters into the yellow, but not red. Adjust the volume on your tape player to get these levels where you want them.</li>
+                <li>Once these are set, rewind your tape, press the red record button in Audacity, then playback your tape.</li>
+                <li>Let it play all the way through. Do not ever pause, fastforward, or rewind the tape during playback as such behavior will be recorded in exactness in your digitized file.</li>
+                <li>When the tape is complete (or you have recorded all that you want from it), press the brown stop button in Audacity.</li>
+                <li>If you want, you can immediately edit your recorded file with the tools Audacity provides.</li>
+                <li>When you are satisfied with your work, save your file to your chosen storage medium as a WAV file (for archival) or as an MP3 (for easy compatibility across devices).</li>
+                <li>Great work! You are now ready for your next tape.</li>
+            </ol>
+
+            <p>It is a good idea to have your tape rewound before starting your recording.</p>
+            <p>Don't forget to make a copy of your preserved files to another storage device for redundancy.</p>
+        </section>
+
          <section>
-            <h4>Process to preserve tapes</h4>
+            <h4>Process to preserve video tapes</h4>
+            <p>This will be a very similar process to preserving audio tapes where you must let the tape play through all the way from start to finish. Here is that process:</p>
+
+            <ol>
+                <li>Make sure your tape player is turned on and hooked into your computer as descibed above.</li>
+                <li>On your computer, open VLC media player. From the menu on the top of the window go to Media > Open Capture Device...</li>
+                <li>Leave capture mode on DirectShow.</li>
+                <li>For Video device name, select your capture card from the drop down menu.</li>
+                <li>Do the same for Audio device name.</li>
+                <li>Now click on the arrow next to the Play button at the bottom of the screen and choose Convert from the drop down menu.</li>
+                <li>You can check the box for "Display the output" if you want, however, depending on your hardware setup, you may not actually see the output of the tape on your screen. You will be able to get audio through your computer as it plays, though.</li>
+                <li>It is recommended to check the box for "Deinterlace". This should improve quality for your digitized file.</li>
+                <li>For the profile, choose "Video - H.264 + MP3 (MP4)" then click the wrench icon.</li>
+                <li>Under the audio codec tab, make sure the codec is set to "MPEG 4 Audio ( AAC ). Depending on your setup, you may need to change the sample rate to 48000 Hz. In my experience, this has been the only sample rate that actually works for me. With your chosen settings in place, click save.</li>
+                <li>For destination file, click browse and navigate to your chosen storage solution. Rename the file and click save.</li>
+                <li>You are now ready to click start. This will begin a recording of exactly what your capture card is seeing.</li>
+                <li>Insert your tape into the player and let it play all the way through. Do not ever pause, fastforward, or rewind the tape during playback as such behavior will be recorded in exactness in your digitized file.</li>
+                <li>When the tape is complete (or you have recorded all that you want from it), you can click the stop button in VLC media player. And that's it, your recording is done!</li>
+            </ol>
+
+            <p>It is a good idea to have your tape rewound before starting your recording.</p>
+            <p>Since some tapes can last for up to six hours, it may be worth it to leave your setup running and come back to it later. If you find that you recorded for an extended time past the end of the tape, you can always edit the digitized file and cut the extra data on the end.</p>
+            <p>Don't forget to make a copy of your preserved files to another storage device for redundancy.</p>
         </section>
     </main>
 
     <footer>
         <p>Digital Memory Works &copy; 2025 - Nathan Luke</p>
-        <p>Email me</p>
+        <p>This website is not to be used to promote, encourage, or perform piracy or any other form of copyright infringement. This service is strictly to help individuals and families preserve their personally recorded media.</p>
+        <p><a href="mailto:luk17006@byui.edu?subject=Digitization Inquiry">Email me</a></p>
         <p><a href="site-plan.html">Site Plan</a></p>
     </footer>
 </body>
