@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log of Preserved Media</title>
 </head>
 <body>
     
@@ -18,6 +18,145 @@
                 <a href="log.html">Logs of Digitized Media</a>
             </nav>
     </header>
+
+    <section>
+        <p>Here is a data log of everything I have preserved broken down by format, media hours, and digital data.</p>
+
+        <!-- <p>DATA IS NOT ACCURATE. PAGE STILL UNDER CONSTRUCTION.</p> -->
+
+    </section>
+
+    <main>
+        <section>
+            <h3>Tapes Preserved</h3>
+            <table id="tapeTable">
+                <thead>
+                    <tr>
+                        <th>Format</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Audio</td>
+                        <td class="count">8</td>
+                    </tr>
+                    <tr>
+                        <td>VHS</td>
+                        <td class="count">37</td>
+                    </tr>
+                    <tr>
+                        <td>VHS-C</td>
+                        <td class="count">7</td>
+                    </tr>
+                    <tr>
+                        <td>Hi8</td>
+                        <td class="count">0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td id="tapeTotal"><strong>0</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h3>Discs Preserved</h3>
+            <table id="discTable">
+                <thead>
+                    <tr>
+                        <th>Format</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CD</td>
+                        <td class="count">34</td>
+                    </tr>
+                    <tr>
+                        <td>miniCD</td>
+                        <td class="count">1</td>
+                    </tr>
+                    <tr>
+                        <td>DVD</td>
+                        <td class="count">133</td>
+                    </tr>
+                    <tr>
+                        <td>BR</td>
+                        <td class="count">0</td>
+                    </tr>
+                    <tr>
+                        <td>4K</td>
+                        <td class="count">0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td id="discTotal"><strong>0</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- script by AI -->
+            <script>
+                function calculateTotal(tableID, totalCellId) {
+                    const table = document.getElementById(tableID);
+                    const countCells = table.querySelectorAll('.count');
+                    let total = 0;
+                    countCells.forEach(cell => {
+                        total += parseInt(cell.textContent, 10) || 0;
+                    });
+                    document.getElementById(totalCellId).textContent = total;
+                }
+                calculateTotal('tapeTable', 'tapeTotal');
+                calculateTotal('discTable', 'discTotal');
+            </script>
+        
+        <section>
+            <h3>Data Preserved</h3>
+            <p>547 GB</p>
+        </section>
+
+        <section>
+            <h3>Media Hours Preserved</h3>
+            <p>H : M : S</p>
+            <p>269:22:17</p>
+        </section>
+
+        <section>
+            <h3>Currently Working on this batch</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Format</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hi8</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>VHS-C</td>
+                        <td>85</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <figure>
+                <img src="styles/images/humble_setupsmall.jpg" alt="My humble digitization station">
+                <figcaption>My humble "digitization station" at home.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="styles/images/clientsitesmall.jpg" alt='My "Mobile" digitization station on site for a client'>
+                <figcaption>Me at my "mobile" "preservation station" on site for a client. This is what you can expect to see if you hire me for on-site service.</figcaption>
+            </figure>
+    </main>
 
     <footer>
         <p>Digital Memory Works &copy; 2025 - Nathan Luke</p>
