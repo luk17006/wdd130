@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log of Preserved Media</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     
@@ -19,85 +20,93 @@
             </nav>
     </header>
 
-    <section>
+    <section class="paragraph">
         <p>Here is a data log of everything I have preserved broken down by format, media hours, and digital data.</p>
+    </section>
 
-        <!-- <p>DATA IS NOT ACCURATE. PAGE STILL UNDER CONSTRUCTION.</p> -->
-
+    <section class="construction">
+        <!-- <h1>DATA IS NOT ACCURATE. PAGE STILL UNDER CONSTRUCTION.</h1> -->
     </section>
 
     <main>
-        <section>
-            <h3>Tapes Preserved</h3>
-            <table id="tapeTable">
-                <thead>
-                    <tr>
-                        <th>Format</th>
-                        <th>Count</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Audio</td>
-                        <td class="count">8</td>
-                    </tr>
-                    <tr>
-                        <td>VHS</td>
-                        <td class="count">37</td>
-                    </tr>
-                    <tr>
-                        <td>VHS-C</td>
-                        <td class="count">7</td>
-                    </tr>
-                    <tr>
-                        <td>Hi8</td>
-                        <td class="count">0</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total</strong></td>
-                        <td id="tapeTotal"><strong>0</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        
-        <section>
-            <h3>Discs Preserved</h3>
-            <table id="discTable">
-                <thead>
-                    <tr>
-                        <th>Format</th>
-                        <th>Count</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CD</td>
-                        <td class="count">34</td>
-                    </tr>
-                    <tr>
-                        <td>miniCD</td>
-                        <td class="count">1</td>
-                    </tr>
-                    <tr>
-                        <td>DVD</td>
-                        <td class="count">133</td>
-                    </tr>
-                    <tr>
-                        <td>BR</td>
-                        <td class="count">0</td>
-                    </tr>
-                    <tr>
-                        <td>4K</td>
-                        <td class="count">0</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total</strong></td>
-                        <td id="discTotal"><strong>0</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <div class="table-row">
+            <div class="pair">
+                <section class="title1">
+                    <h3>Tapes Preserved</h3>
+                </section>
+
+                <table class="narrow-table" id="tapeTable">
+                    <thead>
+                        <tr>
+                            <th>Format</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Audio</td>
+                            <td class="count">8</td>
+                        </tr>
+                        <tr>
+                            <td>VHS</td>
+                            <td class="count">37</td>
+                        </tr>
+                        <tr>
+                            <td>VHS-C</td>
+                            <td class="count">7</td>
+                        </tr>
+                        <tr>
+                            <td>Hi8</td>
+                            <td class="count">0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td id="tapeTotal"><strong>0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pair">
+                <section class="title1">
+                    <h3>Discs Preserved</h3>
+                </section>
+                
+                <table class="narrow-table" id="discTable">
+                    <thead>
+                        <tr>
+                            <th>Format</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CD</td>
+                            <td class="count">34</td>
+                        </tr>
+                        <tr>
+                            <td>miniCD</td>
+                            <td class="count">1</td>
+                        </tr>
+                        <tr>
+                            <td>DVD</td>
+                            <td class="count">133</td>
+                        </tr>
+                        <tr>
+                            <td>BR</td>
+                            <td class="count">0</td>
+                        </tr>
+                        <tr>
+                            <td>4K</td>
+                            <td class="count">0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td id="discTotal"><strong>0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
         <!-- script by AI -->
             <script>
@@ -114,91 +123,130 @@
                 calculateTotal('discTable', 'discTotal');
             </script>
         
-        <section>
-            <h3>Data Preserved</h3>
-            <p>547 GB</p>
-        </section>
+        <div class="table-row">
+            <div class="pair">
+                <section class="title1">
+                    <h3>Data Preserved</h3>
+                </section>
 
-        <section>
-            <h3>Media Hours Preserved</h3>
-            <p>H : M : S</p>
-            <p>269:22:17</p>
-        </section>
+                <table class="narrow-table">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">547 GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pair">
+                <section class="title1">
+                    <h3>Media Hours Preserved</h3>
+                </section>
 
-        <section>
-            <h3>Currently Working on this batch</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Format</th>
-                        <th>Count</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hi8</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>VHS-C</td>
-                        <td>85</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                <table class="narrow-table">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">H : M : S</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">269:22:17</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-        <figure>
-            <img src="styles/images/humble_setupsmall.jpg" alt="My humble digitization station">
-            <figcaption>My humble "digitization station" at home.</figcaption>
-        </figure>
+        <div class="table-row">
+            <div class="pair">
+                <section class="title1">
+                    <h3>Currently Working on this batch</h3>
+                </section>
 
-        <figure>
-            <img src="styles/images/clientsitesmall.jpg" alt='My "Mobile" digitization station on site for a client'>
-            <figcaption>Me at my "mobile" "preservation station" on site for a client. This is what you can expect to see if you hire me for on-site service.</figcaption>
-        </figure>
+                <table class="narrow-table">
+                    <thead>
+                        <tr>
+                            <th>Format</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hi8</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="no_total">
+                            <td>VHS-C</td>
+                            <td>85</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pair">
+                <section class="title1">
+                    <h3>Curious about my setup?</h3>
+                </section>
 
-        <section>
-            <h3>Curious about my setup?</h3>
-            <p>I use a business class HP Compaq Elite 8300 Convertible Microtower from 2012. Here are the specs and additional equipment I use:</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Processor</td>
-                        <td>Intel Core i7-3770</td>
-                    </tr>
-                    <tr>
-                        <td>RAM</td>
-                        <td>12 GB</td>
-                    </tr>
-                    <tr>
-                        <td>Disc Drives</td>
-                        <td>2 DVD Drives</td>
-                        <td>Space for a 3rd (hoping to get a 4K one)</td>
-                    </tr>
-                    <tr>
-                        <td>VCR</td>
-                        <td>Zenith VRA423</td>
-                    </tr>
-                    <tr>
-                        <td>VHS-C adapter</td>
-                        <td>JVC C-P7U Cassette Adapter</td>
-                    </tr>
-                    <tr>
-                        <td>Hi8 Player</td>
-                        <td>Sony Handycam Vision CCD-TRV65 NTSC</td>
-                    </tr>
-                    <tr>
-                        <td>HDMI Up-converter</td>
-                        <td>Samsung DVD-VR375</td>
-                    </tr>
-                    <tr>
-                        <td>Video Capture Device</td>
-                        <td>Vivitar HDMI to USB Video Capture Card</td>
-                    </tr>
-                </tbody>
-            </table>
+                <section class="paragraph">
+                    <p>I use a business class HP Compaq Elite 8300 Convertible Microtower from 2012. Here are the specs and additional equipment I use:</p>
+                </section>
+
+                <table class="wide_table">
+                    <tbody>
+                        <tr>
+                            <td>Processor</td>
+                            <td>Intel Core i7-3770</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>12 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Disc Drives</td>
+                            <!-- colspan was a suggestion from AI -->
+                            <td colspan="2">2 DVD Drives<br>Space for a 3rd (hoping to get a 4K one</td>
+                        </tr>
+                        <tr>
+                            <td>VCR</td>
+                            <td>Zenith VRA423</td>
+                        </tr>
+                        <tr>
+                            <td>VHS-C adapter</td>
+                            <td>JVC C-P7U Cassette Adapter</td>
+                        </tr>
+                        <tr>
+                            <td>Hi8 Player</td>
+                            <td>Sony Handycam Vision CCD-TRV65 NTSC</td>
+                        </tr>
+                        <tr>
+                            <td>HDMI Up-converter</td>
+                            <td>Samsung DVD-VR375</td>
+                        </tr>
+                        <tr>
+                            <td>Video Capture Device</td>
+                            <td>Vivitar HDMI to USB Video Capture Card</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <section class="paragraph">
             <p>I do my editing on a more modern laptop which can also be used for capture and conversion if needed, however it can't preserve discs unless I use a USB solution.</p>
         </section>
+
+        <div class="table-row">
+            <div class="pair">
+                <figure>
+                    <img src="styles/images/humble_setupsmall.jpg" alt="My humble digitization station">
+                    <figcaption>My humble "digitization station" at home.</figcaption>
+                </figure>
+            </div>
+            <div class="pair">
+                <figure>
+                    <img src="styles/images/clientsitesmall.jpg" alt='My "Mobile" digitization station on site for a client'>
+                    <figcaption>Me at my "mobile" "preservation station" on site for a client. This is what you can expect to see if you hire me for on-site service.</figcaption>
+                </figure>
+            </div>
+        </div>
     </main>
 
     <footer>

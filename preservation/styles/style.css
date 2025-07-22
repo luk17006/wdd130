@@ -149,6 +149,52 @@ figcaption {
   margin-top: 8px;
 }
 
+table {
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  border-collapse: collapse;
+  font-family: var(--paragraph-font);
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table.narrow-table {
+  width: 60%;
+  max-width: 800px;
+}
+
+table thead {
+  background-color: var(--primary-color);
+  color: var(--headline-color-on-color);
+}
+
+table th,
+table td {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #fdf9f5;
+}
+
+table tbody tr:last-child:not(.no_total) {
+  font-weight: bold;
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+table tr:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--paragraph-color-on-color);
@@ -173,4 +219,32 @@ footer a:hover {
   margin: 30px 0 10px;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.table-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+
+.table-row .pair {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Recommended by AI for mobile devices */
+@media (max-width: 700px) {
+  .table-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-row .pair {
+    max-width: 90%;
+  }
 }
