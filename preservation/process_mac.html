@@ -3,7 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitization Process for Windows</title>
+    <title>Digitization Process for macOS</title>
+    <style>
+        /* Dropdown button courtesy of w3schools*/
+        .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+        background-color: #F2545B;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #8D5A42;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 8px;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #F2545B;
+            border-radius: 8px;
+        }
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;}
+    </style>
 </head>
 <body>
     
@@ -12,15 +63,46 @@
                 <img class="logo" src="styles/images/logo.png" alt="Digital Memory Works Logo">
         </a>
         <h1>Preserving Media That Matters</h1>
+        <h1>UNDER CONSTRUCTION - PAGE NOT ACCURATE</h1>
             <nav>
                 <a href="index.html">Addressing the Issue</a>
-                <a href="process.html">The Digitization Process</a>
+                <a href="process_mac.html">The Digitization Process</a>
                 <a href="log.html">Logs of Digitized Media</a>
             </nav>
-    </header>
+    </header> 
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Select your computer</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="process_win.html">Windows</a>
+            <a href="process_mac.html">Mac</a>
+            <a href="process_tux.html">Linux</a>
+        </div>
+    </div> 
+
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                 }
+            }
+        }
+    </script>
 
     <section>
-        <h1>How to preserve Your Media</h1>
+        <h1>How to preserve Your Media using Apple macOS</h1>
         <p>This page will cover how to preserve your many tapes and discs with a Windows computer. Read through it carefully before attempting anything on your own. If you find that you are struggling to source the right equipment or find that this process is a bit beyond you, feel free to reach out to me for a consult on a digitization service. You can email me <a href="mailto:luk17006@byui.edu?subject=Digitization Inquiry">here</a>.</p>
     </section>
 
