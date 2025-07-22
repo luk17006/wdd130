@@ -1,0 +1,145 @@
+/* Everything is tailored to the home page. Things that don't carry over well to the other 2 pages will be given their own class. */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap');
+
+/* AI suggested putting all the colors here like this would be quickest */
+:root {
+  --primary-color: #8D5A42;
+  --secondary-color: #F2E3C6;
+  --accent1-color: #F2545B;
+  --accent2-color: #3A9BDC;
+  --background-color: #FAF3E0;
+
+  --heading-font: "DM Serif Display", serif;
+  --paragraph-font: "Open Sans", sans-serif;
+
+  --headline-color-on-white: #8D5A42;
+  --headline-color-on-color: #F2E3C6;
+  --paragraph-color-on-white: #4A3B32;
+  --paragraph-color-on-color: #F2E3C6;
+  --paragraph-background-color: #8D5A42;
+
+  --nav-link-color: white;
+  --nav-background-color: #F2E3C6;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #F2545B;
+}
+
+body {
+  margin: 0;
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  background-color: var(--background-color);
+
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr;
+}
+
+header {
+  /* background-color: var(--nav-background-color); */
+  background-color: #8D5A42; /* Liked this color better */
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-color);
+  margin: 10px 0;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+section > h1 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  text-align: center;
+  margin: 30px 0 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+main > section:first-child { /* Was really struggling here, AI suggested breaking things down by "children" */
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+main p {
+  font-family: var(--paragraph-font);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2em;
+}
+
+main > section:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+figure {
+  text-align: center;
+  max-width: 90%;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--paragraph-color-on-white);
+  margin-top: 8px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--paragraph-color-on-color);
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: var(--accent2-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
