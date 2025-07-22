@@ -25,6 +25,10 @@
   --nav-hover-background-color: #F2545B;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--paragraph-font);
