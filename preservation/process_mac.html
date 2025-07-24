@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digitization Process for Mac</title>
+    <!-- Developed using Apple MacBook Air 13-inch, M3, 2024, macOS Sonoma 14.6 -->
     <link rel="stylesheet" href="styles/style.css">
     <style>
         /* Dropdown button courtesy of w3schools*/
@@ -112,7 +113,9 @@
     </section>
 
     <section class="paragraph">
-        <p>This page will cover how to preserve your many tapes and discs with a Windows computer. Read through it carefully before attempting anything on your own. If you find that you are struggling to source the right equipment or find that this process is a bit beyond you, feel free to reach out to me for a consult on a digitization service. You can email me <a href="mailto:luk17006@byui.edu?subject=Digitization Inquiry">here</a>.</p>
+        <p>This page will cover how to preserve your many tapes and discs with an Apple computer. Read through it carefully before attempting anything on your own. If you find that you are struggling to source the right equipment or find that this process is a bit beyond you, feel free to reach out to me for a consult on a digitization service. You can email me <a href="mailto:luk17006@byui.edu?subject=Digitization Inquiry">here</a>.</p>
+
+        <p>It should be noted that all instructions are given for NTSC standards for North American regions. Other regions of the world follow similar processes, but specifics may differ.</p>
     </section>
 
     <main>
@@ -121,7 +124,7 @@
         </section>
         
         <section class="paragraph">
-            <p>You will need some basic equipment before you can preserve your old media. Listed below are the needed devices for each format. Regardless of what you are digitizing, a computer is required, and it is strongly recommended that you have at least two separate data storage solutions prepared to place copies of your newly preserved media.</p>
+            <p>You will need some basic equipment before you can preserve your old media. Listed below are the needed devices for each format. Regardless of what you are digitizing, a computer is required, and it is strongly recommended that you have at least two separate data storage solutions prepared to place copies of your newly preserved media. Redundancy is the key to data safety.</p>
         </section>
 
         <section class="title1">
@@ -139,7 +142,7 @@
             <ul>
                 <li>CD drive --> Only for audio and photo CDs</li>
                 <li>DVD drive --> Audio and photo CDs and DVDs</li>
-                <li>BR drive --> Audio and photo CDs, DVDs, and Blu-ray discs</li>
+                <li>BD drive --> Audio and photo CDs, DVDs, and Blu-ray discs</li>
             </ul>
 
             <p>Don't worry if your drive has a "ROM" or "RW" code on it. The purpose of this process is to read discs, not write to them, so these codes will not matter.</p>
@@ -183,12 +186,12 @@
                 <li>an RCA to HDMI converter</li>
                 <li>a video capture device</li>
                 <li>and the VLC media player software which can be downloaded <a href="https://www.videolan.org/vlc/" target="_blank" rel="noopener noreferrer">here</a></li>
-                <li>BONUS: if you want to be able to watch your tapes playback as you digitize them, you can also include an HDMI splitter in your setup. This takes one HDMI picture and sends it to two different displays. In our case these would be the capture device, and then a separate monitor or TV.</li>
+                <li>BONUS: if you want to be able to watch your tapes play back as you digitize them, you can also include an HDMI splitter in your setup. This takes one HDMI picture and sends it to two different displays. In our case these would be the capture device, and then a separate monitor or TV.</li>
             </ul>
 
             <p>For VHS-C tapes, adapters do exist to fit them into VCRs if preferred.</p>
 
-            <p>RCA to HDMI adapters and video capture devices can be found for around $10 - $20 online or in local retailers.</p>
+            <p>RCA to HDMI adapters and video capture devices can be found for around $10 - $20 online or at local retailers.</p>
             
             <p>When buying the capture device, be sure it is HDMI-in/USB-out, not the other way around. Or if you are investing in a more serious capture card for other ventures, that will do just fine as well.</p>
                 
@@ -197,7 +200,7 @@
             <p>If your tape player has S-video out, that would be better than RCA. In which case, finding an S-video to HDMI adapter would be ideal. If your tape player only has RF out, I would recommend finding a different player or reaching out to me for a consult.</p>
 
             <p>Each device will hook into each other like so:</p>
-            <p>Tape player --> RCA to HDMI adapter --> HDMI splitter (optional) --> video capture device --> computer</p>
+            <p>Tape player --> RCA/S-video to HDMI adapter --> HDMI splitter (optional) --> video capture device --> computer</p>
             <p>If an HDMI splitter is being used, connect a cable from its second output port to a separate display for your viewing.</p>
 
             <p>With your hardware and software ready to go, you are set to start digitizing some tapes! Instructions for that can be found <a href="#preserve_tapes">here</a>.</p>
@@ -253,19 +256,19 @@
         </section>
 
         <section class="paragraph">
-            <p>Unlike discs, tapes actually need to be converted from an analog signal to a digital file. This is why we call it digitization. This process is not as quick as simply archiving CDs or DVDs, though, because in order to preserve a tape, you have to let it playback from start to finish. Here is how that process is done for audiotapes:</p>
+            <p>Unlike discs, tapes actually need to be converted from an analog signal to a digital file. This is why we call it digitization. This process is not as quick as simply archiving CDs or DVDs, though, because in order to preserve a tape, you have to let it play back from start to finish. Here is how that process is done for audiotapes:</p>
 
             <ol>
                 <li>Make sure your tape player is turned on and hooked into your computer as described above.</li>
                 <li>On your computer, open Audacity. At the top of the window click the button that says "Audio Setup".</li>
-                <li>From this drop down list set the host to MME.</li>
+                <li>From this drop down list set the host to "Core Audio".</li>
                 <li>Set the playback device to your speakers or headphones.</li>
                 <li>Set the recording device to Line In or your chosen audio capture device.</li>
                 <li>Set the recording channels to stereo.</li>
                 <li>Insert your tape and let it play. You should see the level meters next to the microphone at the top right of the window start to respond to your tape.</li>
                 <li>You want these levels to be around -6 dB to -3 dB. This should put your meters into the yellow, but not red. Adjust the volume on your tape player to get these levels where you want them.</li>
-                <li>Once these are set, rewind your tape, press the red record button in Audacity, then playback your tape.</li>
-                <li>Let it play all the way through. Do not ever pause, fastforward, or rewind the tape during playback as such behavior will be recorded in exactness in your digitized file.</li>
+                <li>Once these are set, rewind your tape, press the red record button in Audacity, then play back your tape.</li>
+                <li>Let it play all the way through. Do not ever pause, fast-forward, or rewind the tape during playback as such behavior will be recorded in exactness in your digitized file.</li>
                 <li>When the tape is complete (or you have recorded all that you want from it), press the brown stop button in Audacity.</li>
                 <li>If you want, you can immediately edit your recorded file with the tools Audacity provides.</li>
                 <li>When you are satisfied with your work, save your file to your chosen storage medium as a WAV file (for archival) or as an MP3 (for easy compatibility across devices).</li>
@@ -285,18 +288,18 @@
 
             <ol>
                 <li>Make sure your tape player is turned on and hooked into your computer as described above.</li>
-                <li>On your computer, open VLC media player. From the menu on the top of the window go to Media > Open Capture Device...</li>
-                <li>Leave capture mode on DirectShow.</li>
-                <li>For Video device name, select your capture card from the drop down menu.</li>
-                <li>Do the same for Audio device name.</li>
-                <li>Now click on the arrow next to the Play button at the bottom of the screen and choose Convert from the drop down menu.</li>
-                <li>You can check the box for "Display the output" if you want, however, depending on your hardware setup, you may not actually see the output of the tape on your screen. You will be able to get audio through your computer as it plays, though.</li>
-                <li>It is recommended to check the box for "Deinterlace". This should improve quality for your digitized file.</li>
-                <li>For the profile, choose "Video - H.264 + MP3 (MP4)" then click the wrench icon.</li>
-                <li>Under the audio codec tab, make sure the codec is set to "MPEG 4 Audio ( AAC ). Depending on your setup, you may need to change the sample rate to 48000 Hz. In my experience, this has been the only sample rate that actually works for me. With your chosen settings in place, click save.</li>
-                <li>For destination file, click browse and navigate to your chosen storage solution. Rename the file and click save.</li>
+                <li>On your computer, open VLC media player. From the File menu select Open Capture Device...</li>
+                <li>Select your capture card from the drop down menus for both video and audio.</li>
+                <li>Check the box for Stream output and click settings.</li>
+                <li>You can check the box to "Display the stream locally" if you want, however, depending on your hardware setup, you may not actually see the output of the tape on your screen. You will be able to get audio through your computer as it plays, though.</li>
+                <li>Select the File radio button then click browse and choose where to save your preserved video.</li>
+                <li>For Encapsulation Method, choose MPEG 4</li>
+                <li>Check the boxes for Video and Audio under Transcoding options. Choose "h264" for video and "mp3" for audio.</li>
+                <li>Press "OK", then press "Open".</li>
                 <li>You are now ready to click start. This will begin a recording of exactly what your capture card is seeing.</li>
-                <li>Insert your tape into the player and let it play all the way through. Do not ever pause, fastforward, or rewind the tape during playback as such behavior will be recorded in exactness in your digitized file.</li>
+                <li>Insert your tape into the player and let it play for a bit. After the tape has played a section with some audio and video, stop the recording, find your recorded file and open it to make sure it recorded video and audio properly. If it hasn't you may need to adjust the settings for your capture device or sample rate in VLC.</li>
+                <li>Once you know your settings are good, rewind your tape and start a new recording.</li>
+                <li>Let your tape play all the way through. Do not ever pause, fast-forward, or rewind the tape during playback as such behavior will be recorded in exactness in your digitized file.</li>
                 <li>When the tape is complete (or you have recorded all that you want from it), you can click the stop button in VLC media player. And that's it, your recording is done!</li>
             </ol>
 
